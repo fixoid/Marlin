@@ -4176,7 +4176,7 @@ void pad_message_string() {
     // pad with spaces to fill up the line
     while (j++ < LCD_WIDTH) lcd_status_message[i++] = ' ';
     // chop off at the edge
-    lcd_status_message[i] = '\0';
+    lcd_status_message[--i] = '\0';
   }
 }
 
